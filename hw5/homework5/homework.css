@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Vazir";
+    src: url(./font/vazir/Vazir.eot), format(eot);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  font-family: "Vazir";
+}
+
+body {
+  background-color: #f4f5f7;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: #1e293b;
+}
+
+.table-container {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+}
+
+.league-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 14px;
+}
+
+.league-table th,
+.league-table td {
+  padding: 12px 10px;
+  white-space: nowrap;
+}
+
+.league-table thead tr {
+  color: #64748b;
+  font-weight: 600;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.league-table tbody tr {
+  border-bottom: 1px solid #f1f5f9;
+  transition: background-color 0.2s ease;
+}
+
+.league-table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.league-table tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+  font-weight: 700;
+}
+
+.team-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.rank {
+  font-weight: 600;
+  color: #475569;
+}
+
+.points {
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.recent-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  direction: ltr; 
+}
+
+.badge {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.badge.win {
+  background-color: #10b981;
+}
+
+.badge.draw {
+  background-color: #64748b;
+}
+
+.badge.loss {
+  background-color: #dd1414;
+}

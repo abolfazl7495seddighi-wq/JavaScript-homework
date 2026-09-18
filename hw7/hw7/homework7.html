@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered - abolfazl seddighi</title>
+    <link rel="stylesheet" href="./homework7.css">
+    <script src="./homework7.js"></script>
+
+
+</head>
+<body>
+
+    <div class="container">
+        <form class="register-form" action="#" method="post">
+            <h2>Register</h2>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <span class="error" id="username-error"></span>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="email-error"></span>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <span class="error" id="password-error"></span>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <span class="error" id="confirm-password-error"></span>
+
+            <label for="city">City</label>
+            <select id="city" name="city" required>
+                <option value="">Select your city</option>
+                <option value="tehran">Tehran</option>
+                <option value="mashhad">Mashhad</option>
+                <option value="isfahan">Isfahan</option>
+                <option value="shiraz">Shiraz</option>
+                <option value="tabriz">Tabriz</option>
+            </select>
+            <span class="error" id="city-error"></span>
+
+            <label>Gender</label>
+            <div class="radio-group">
+                <label class="radio-container">Male
+                    <input type="radio" name="gender" value="male" required>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">Female
+                    <input type="radio" name="gender" value="female" required>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <span class="error" id="gender-error"></span>
+
+            <label>Interests</label>
+            <div class="checkbox-group">
+                <label class="checkbox-container">Sports
+                    <input type="checkbox" name="interests" value="sports">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Music
+                    <input type="checkbox" name="interests" value="music">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Travel
+                    <input type="checkbox" name="interests" value="travel">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Reading
+                    <input type="checkbox" name="interests" value="reading">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <span class="error" id="interests-error"></span>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>
